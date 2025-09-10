@@ -33,7 +33,7 @@ const Sidebar = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="absolute w-100 top-20 md:sticky md:top-10 md:w-50 lg:w-60 bg-white theme-bg theme-text shadow-md flex flex-col p-4 rounded-xl m-3 z-40 max-h-fit"
+      className="absolute w-100 top-20 md:relative md:top-0 md:w-50 lg:w-60 bg-white theme-bg theme-text shadow-md flex flex-col p-4 rounded-xl m-3 z-40"
     >
       <div className="flex items-center gap-2 mb-4">
         <img src={Logo} />

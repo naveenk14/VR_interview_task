@@ -10,7 +10,7 @@ import { Profile, Flag } from "../../Assets";
 
 const Navbar = ({ setOpen }) => {
   return (
-    <header className="h-14 bg-white shadow flex items-center justify-between p-4 rounded-xl z-10 sticky top-1">
+    <header className="h-14 bg-white shadow flex items-center justify-between p-4 rounded-xl z-10">
       <div className="flex items-center">
         <Menu
           color="#586A84"

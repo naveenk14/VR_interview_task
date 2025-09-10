@@ -24,11 +24,11 @@ const Layout = ({ children }) => {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="flex h-screen">
       {open && <Sidebar ref={menuRef} />}
       <div className="flex-1 flex flex-col m-3">
         <Navbar setOpen={setOpen} />
-        <main className="flex-1 overflow-auto">{children}</main>
+        <main className="flex-1 overflow-auto hide-scrollbar">{children}</main>
       </div>
     </div>
   );
