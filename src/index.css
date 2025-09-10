@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme{
+  --color-primary-light: #586A84;
+  --color-primary-dark: #3B4758;
+  --color-warning: #FFF2DA;
+  --color-info: #129199;
+  --color-success: #0DA678;
+  --color-cancelled:#FF316A;
+  --default-font-family: 'Roboto', 'sans-serif';
+}
+
+@import "tailwindcss";
+
+@layer base {
+  /* Light theme defaults */
+  :root {
+    --color-bg: 255 255 255;   /* white */
+    --color-text: 17 24 39;    /* gray-900 */
+  }
+
+  /* Dark theme overrides */
+  .dark {
+    --color-bg: 17 24 39;      /* gray-900 */
+    --color-text: 255 255 255; /* white */
+  }
+}
+
+@layer components {
+  .theme-bg {
+    @apply bg-[rgb(var(--color-bg))];
+  }
+
+  .theme-text {
+    @apply text-[rgb(var(--color-text))];
+  }
+}
+
+
+body{
+  background: #EEF0F4;
+}
