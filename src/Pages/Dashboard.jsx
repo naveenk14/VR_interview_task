@@ -1,6 +1,6 @@
 import Layout from "../components/Layout/Layout";
 import StatsCard from "../components/Dashboard/StatsCard";
-import { CustomerIcon, Glass, Glass1, Profile, RevenuesIcon, ShopsIcon, User1, User2 } from "../Assets";
+import { CustomerIcon, Glass, Glass1, RevenuesIcon, ShopsIcon, User1, User2 } from "../Assets";
 import RecentOrders from "../components/Dashboard/RecentOrders";
 import { Link } from "react-router";
 import TopSelling from "../components/Dashboard/TopSelling";

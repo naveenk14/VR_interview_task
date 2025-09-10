@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
     function handleClickOutside(event) {
       if (window.innerWidth < 768) {
         if (menuRef.current && !menuRef.current.contains(event.target)) {
-          setOpen(false); // close when clicking outside
+          setOpen(false); // this is for close modal when clicking outside
         }
       }
     }

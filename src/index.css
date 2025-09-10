@@ -10,33 +10,11 @@
   --default-font-family: 'Roboto', 'sans-serif';
 }
 
-@import "tailwindcss";
-
-@layer base {
-  /* Light theme defaults */
-  :root {
-    --color-bg: 255 255 255;   /* white */
-    --color-text: 17 24 39;    /* gray-900 */
-  }
-
-  /* Dark theme overrides */
-  .dark {
-    --color-bg: 17 24 39;      /* gray-900 */
-    --color-text: 255 255 255; /* white */
-  }
-}
-
-@layer components {
-  .theme-bg {
-    @apply bg-[rgb(var(--color-bg))];
-  }
-
-  .theme-text {
-    @apply text-[rgb(var(--color-text))];
-  }
-}
-
-
 body{
   background: #EEF0F4;
+}
+
+.MuiChartsLegend-root.MuiChartsLegend-horizontal {
+  margin-left: auto;
+  margin-right: 20px; 
 }
