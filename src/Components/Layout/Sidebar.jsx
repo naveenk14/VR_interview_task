@@ -33,7 +33,7 @@ const Sidebar = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="absolute w-100 top-20 md:relative md:top-0 md:w-50 lg:w-60 bg-white theme-bg theme-text shadow-md flex flex-col p-4 rounded-xl m-3 z-40"
+      className="absolute w-100 top-20 md:relative md:top-0 md:w-50 lg:w-60 bg-white shadow-md flex flex-col p-4 rounded-xl m-3 z-10"
     >
       <div className="flex items-center gap-2 mb-4">
         <img src={Logo} />
@@ -45,7 +45,7 @@ const Sidebar = forwardRef((props, ref) => {
             <li key={i}>
               <button
                 onClick={() => setActive(item.label)}
-                className={`flex items-center gap-3 w-full text-sm p-4 md:p-3 rounded-lg transition-colors cursor-pointer ${
+                className={`flex items-center gap-3 w-full text-sm p-4 md:p-2.5 rounded-lg transition-colors cursor-pointer ${
                   active === item.label
                     ? "bg-[#E5F3FF] text-primary-dark font-medium"
                     : "text-primary-light hover:bg-gray-100"

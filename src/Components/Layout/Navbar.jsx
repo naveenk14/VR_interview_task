@@ -8,15 +8,14 @@ import {
 } from "lucide-react";
 import { Profile, Flag } from "../../Assets";
 
-const Navbar = ({ setOpen }) => {
+const Navbar = ({ toggleSidebar, iconRef }) => {
   return (
     <header className="h-14 bg-white shadow flex items-center justify-between p-4 rounded-xl z-10">
       <div className="flex items-center">
-        <Menu
-          color="#586A84"
-          className="cursor-pointer relative"
-          onClick={() => setOpen((prev) => !prev)}
-        />
+        <button ref={iconRef} onClick={() => toggleSidebar()}>
+          <Menu color="#586A84" className="cursor-pointer" />
+        </button>
+
         <div className="flex flex-1 items-center text-primary-light bg-[#F2F6FA] ms-1 md:ms-5 px-3 rounded">
           <Search size={16} />
           <input
